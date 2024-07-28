@@ -54,7 +54,7 @@ const Footer = () => {
             ))}
         </div>
       </div>
-      <div className="group mt-6 flex flex-col items-center justify-center">
+      <div className="group mt-6 flex cursor-pointer flex-col items-center justify-center">
         <a>
           <svg
             onClick={handlePunch}

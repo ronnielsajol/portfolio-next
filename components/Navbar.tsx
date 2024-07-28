@@ -8,8 +8,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background py-1 backdrop-blur-lg">
-      <div className="flex h-16 items-center justify-between py-8 pl-8 pr-8 md:pl-40 md:pr-20">
+    <nav className="sticky top-0 z-50 h-16 w-full bg-background py-1 backdrop-blur-lg">
+      <div className="flex h-16 items-center justify-between px-8 md:mx-10 lg:ml-20 lg:mr-10 lg:p-0">
         <div>
           <a href="/">
             <Image src="/ronDev.png" alt="ron.dev" width={150} height={35} />
@@ -67,11 +67,12 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="bg-background md:hidden">
+        <div className="absolute left-0 top-16 flex h-[calc(100vh-64px)] w-full items-center justify-center bg-background md:hidden">
           <ul className="flex flex-col items-center space-y-6 py-6">
             <li>
               <Button
                 className={"transition-all duration-300 hover:text-accent"}
+                onClick={() => setIsOpen(false)}
               >
                 <a href="#About">About</a>
               </Button>
@@ -79,6 +80,7 @@ function Navbar() {
             <li>
               <Button
                 className={"transition-all duration-300 hover:text-accent"}
+                onClick={() => setIsOpen(false)}
               >
                 <a href="#Experience">Experience</a>
               </Button>
@@ -86,6 +88,7 @@ function Navbar() {
             <li>
               <Button
                 className={"transition-all duration-300 hover:text-accent"}
+                onClick={() => setIsOpen(false)}
               >
                 <a href="#Resume">Résumé</a>
               </Button>

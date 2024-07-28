@@ -19,7 +19,7 @@ const Experience = () => {
 
   return (
     <main
-      className="flex w-full flex-col items-center justify-center"
+      className="flex w-full flex-col items-center justify-center pt-[66px]"
       id="Experience"
     >
       <h1 className="text-[8vw] font-bold transition-all duration-300 hover:text-accent lg:text-5xl">

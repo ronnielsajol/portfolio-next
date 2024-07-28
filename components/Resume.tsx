@@ -4,7 +4,7 @@ import { FiSend } from "react-icons/fi";
 const Resume = () => {
   return (
     <main
-      className="mt-24 flex w-full flex-col items-center justify-center"
+      className="mt-24 flex w-full flex-col items-center justify-center pt-[66px]"
       id="Resume"
     >
       <div className="flex flex-col items-center justify-center">

@@ -5,10 +5,20 @@ const Hero = () => {
   return (
     <>
       <main
-        className="mx-8 my-10 mt-8 flex justify-between md:mx-20 md:my-28 md:ml-40 md:mt-20"
+        className="mb-20 flex justify-between px-8 pt-[66px] md:mx-10 lg:ml-20 lg:mr-10 lg:px-0"
         id="About"
       >
-        <div className="mr-5">
+        <div className="xl:mr-5">
+          {/* Left section */}
+          {/* <div className="mb-4 flex w-full items-center justify-center">
+            <Image
+              src="/hero2.jpg"
+              alt="portrait"
+              height={300}
+              width={300}
+              className="rounded-full border-4 border-accent md:hidden"
+            />
+          </div> */}
           <h4 className="text-[4vw] text-slate-200 md:mb-5 md:text-2xl lg:text-2xl xl:text-[2vw]">
             Hi! My name is
           </h4>
@@ -55,7 +65,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="group relative hidden h-[532px] w-[427.23px] lg:block">
+        <div className="group relative hidden h-[532px] w-[427.23px] xl:block">
           <div className="absolute left-0 top-6 h-[505px] w-[405px] animate-pulse rounded-bl-[170px] bg-accent blur-[18.40px] transition-all duration-500 group-hover:left-[21px] group-hover:top-0"></div>
           <div className="absolute left-0 top-6 h-[505px] w-[405px] rounded-bl-[170px] bg-hero bg-cover bg-center bg-no-repeat"></div>
         </div>
