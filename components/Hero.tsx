@@ -66,8 +66,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="group relative hidden h-[532px] w-[427.23px] xl:block">
-          <div className="absolute left-0 top-6 h-[505px] w-[405px] animate-pulse rounded-bl-[170px] bg-accent blur-[18.40px] transition-all duration-500 group-hover:left-[21px] group-hover:top-0"></div>
-          <div className="absolute left-0 top-6 h-[505px] w-[405px] rounded-bl-[170px] bg-hero bg-cover bg-center bg-no-repeat"></div>
+          <div className="duration-[5000ms] absolute left-0 top-6 h-[505px] w-[405px] animate-pulse rounded-bl-[170px] bg-accent blur-[18.40px] transition-all group-hover:left-[21px] group-hover:top-0"></div>
+          <div className="bg-hero absolute left-0 top-6 h-[505px] w-[405px] rounded-bl-[170px] bg-cover bg-center bg-no-repeat"></div>
         </div>
       </main>
     </>

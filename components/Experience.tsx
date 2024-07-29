@@ -1,20 +1,31 @@
 import Image from "next/image";
 import Icons from "./Icons";
+import IconCloud from "./magicui/icon-cloud";
+import { Vortex } from "./ui/vortex";
 
 const Experience = () => {
-  const iconPaths = [
-    "/Html 5.png",
-    "/CSS3.png",
-    "/JavaScript.png",
-    "/PHP.png",
-    "/React.png",
-    "/Vue Js.png",
-    "/Python.png",
-    "/Tailwind CSS.png",
-    "/TypeScript.png",
-    "/Laravel.png",
-    "/Java.png",
-    "/Git.png",
+  const slugs = [
+    "typescript",
+    "javascript",
+    "react",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "postgresql",
+    "vercel",
+    "git",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "figma",
+    "php",
+    "laravel",
+    "python",
+    "vuedotjs",
+    "netlify",
+    "tailwindcss",
   ];
 
   return (
@@ -25,23 +36,21 @@ const Experience = () => {
       <h1 className="text-[8vw] font-bold transition-all duration-300 hover:text-accent lg:text-5xl">
         EXPERIENCE
       </h1>
-      <p className="mt-3 text-balance p-1 text-center text-[3vw] font-light text-textColor md:w-[455px] md:text-base">
+      <p className="text-textColor mt-3 text-balance p-1 text-center text-[3vw] font-light md:w-[455px] md:text-base">
         I&apos;ve been doing web development for about a year now, and I&apos;m
         always eager to learn more in this fast-paced industry.
       </p>
 
       <section className="mt-5 md:mt-10">
-        <p className="p-5 text-center text-[4vw] font-medium text-textColor md:text-lg">
+        <p className="text-textColor p-5 text-center text-[4vw] font-medium md:text-lg">
           These are the technologies I&apos;ve worked with:
         </p>
-        <div className="grid grid-cols-3 place-items-center gap-1 md:grid-cols-6 md:gap-4">
-          {iconPaths.map((path, index) => (
-            <Icons key={index} src={path} />
-          ))}
+        <div className="flex items-center justify-center">
+          <IconCloud iconSlugs={slugs} />
         </div>
       </section>
       <section className="mt-10 md:mt-16">
-        <p className="p-5 text-center text-[4vw] font-medium text-textColor md:text-lg">
+        <p className="text-textColor p-5 text-center text-[4vw] font-medium md:text-lg">
           These are the past companies I&apos;ve worked with:
         </p>
         <div className="mt-5 flex w-full flex-col gap-6 px-7 md:mt-10 lg:flex-row">

@@ -3,57 +3,57 @@
 @tailwind utilities;
 
 html {
-	@apply max-h-full w-full overflow-x-hidden scroll-smooth bg-background font-sans text-textColor;
+  @apply text-textColor max-h-full w-full overflow-x-hidden scroll-smooth bg-background font-sans;
 }
 
 @layer components {
-	button.btn {
-		@apply rounded-xl border-solid px-[15px] py-[8px] text-xl text-textColor;
-	}
+  button.btn {
+    @apply text-textColor rounded-xl border-solid px-[15px] py-[8px] text-xl;
+  }
 
-	button.hero {
-		@apply h-12 w-44;
-	}
+  button.hero {
+    @apply h-12 w-44;
+  }
 
-	button.primary {
-		@apply bg-primary font-normal;
-	}
+  button.primary {
+    @apply bg-primary font-normal;
+  }
 
-	button.secondary {
-		@apply border-[4px] border-secondary bg-textColor text-[18px] font-medium text-primary;
-	}
+  button.secondary {
+    @apply bg-textColor border-[4px] border-secondary text-[18px] font-medium text-primary;
+  }
 
-	button.resume {
-		@apply h-20 w-60 text-xl font-semibold;
-	}
+  button.resume {
+    @apply h-20 w-60 text-xl font-semibold;
+  }
 
-	h1.gradient-hero {
-		@apply bg-gradient-to-r from-primary from-50% to-accent to-100% bg-clip-text text-transparent;
-	}
+  h1.gradient-hero {
+    @apply bg-gradient-to-r from-primary from-50% to-accent to-100% bg-clip-text text-transparent;
+  }
 
-	.gradient2 {
-		@apply bg-gradient-to-r from-primary from-30% to-accent to-80% bg-clip-text text-transparent;
-	}
+  .gradient2 {
+    @apply bg-gradient-to-r from-primary from-30% to-accent to-80% bg-clip-text text-transparent;
+  }
 
-	.card {
-		@apply flex flex-col gap-2 rounded-lg border border-transparent p-2 backdrop-blur-md transition-all duration-300 group-hover:border-white group-hover:border-opacity-20 group-hover:bg-primary group-hover:bg-opacity-40;
-	}
+  .card {
+    @apply flex flex-col gap-2 rounded-lg border border-transparent p-2 backdrop-blur-md transition-all duration-300 group-hover:border-white group-hover:border-opacity-20 group-hover:bg-primary group-hover:bg-opacity-40;
+  }
 
-	p,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply cursor-default;
-	}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply cursor-default;
+  }
 
-	::-webkit-scrollbar {
-		@apply w-3 bg-background bg-opacity-10;
-	}
+  ::-webkit-scrollbar {
+    @apply w-3 bg-background bg-opacity-10;
+  }
 
-	::-webkit-scrollbar-thumb {
-		@apply w-3 rounded-3xl bg-accent bg-opacity-20 hover:bg-opacity-50;
-	}
+  ::-webkit-scrollbar-thumb {
+    @apply w-3 rounded-3xl bg-accent bg-opacity-20 hover:bg-opacity-50;
+  }
 }
