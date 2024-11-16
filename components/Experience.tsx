@@ -2,6 +2,7 @@ import Image from "next/image";
 import Icons from "./Icons";
 import IconCloud from "./magicui/icon-cloud";
 import { Vortex } from "./ui/vortex";
+import { MagicCard } from "./magicui/magic-card";
 
 const Experience = () => {
   const slugs = [
@@ -36,21 +37,26 @@ const Experience = () => {
       <h1 className="text-[8vw] font-bold transition-all duration-300 hover:text-accent lg:text-5xl">
         EXPERIENCE
       </h1>
-      <p className="text-textColor mt-3 text-balance p-1 text-center text-[3vw] font-light md:w-[455px] md:text-base">
+      <p className="mt-3 text-balance p-1 text-center text-[3vw] font-light text-textColor md:w-[455px] md:text-base">
         I&apos;ve been doing web development for about a year now, and I&apos;m
         always eager to learn more in this fast-paced industry.
       </p>
 
-      <section className="mt-5 md:mt-10">
-        <p className="text-textColor p-5 text-center text-[4vw] font-medium md:text-lg">
+      <section className="mt-5 md:mt-10 md:w-full">
+        <p className="p-5 text-center text-[4vw] font-medium text-textColor md:text-lg">
           These are the technologies I&apos;ve worked with:
         </p>
         <div className="flex items-center justify-center">
+          {/* <MagicCard
+            className="cursor-pointer flex-col items-center justify-center whitespace-nowrap text-4xl"
+            gradientColor="#7CF4B3"
+          > */}
           <IconCloud iconSlugs={slugs} />
+          {/* </MagicCard> */}
         </div>
       </section>
       <section className="mt-10 md:mt-16">
-        <p className="text-textColor p-5 text-center text-[4vw] font-medium md:text-lg">
+        <p className="p-5 text-center text-[4vw] font-medium text-textColor md:text-lg">
           These are the past companies I&apos;ve worked with:
         </p>
         <div className="mt-5 flex w-full flex-col gap-6 px-7 md:mt-10 lg:flex-row">

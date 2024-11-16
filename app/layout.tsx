@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import DotPattern from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { MagicCard } from "@/components/magicui/magic-card";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +23,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+            "-z-10 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
           )}
         />
+
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
