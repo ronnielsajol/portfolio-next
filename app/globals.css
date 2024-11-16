@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 html {
-  @apply text-textColor max-h-full w-full overflow-x-hidden scroll-smooth bg-background font-sans;
+  @apply max-h-full w-full overflow-x-hidden scroll-smooth bg-background font-sans text-textColor;
 }
 
 @layer components {
   button.btn {
-    @apply text-textColor rounded-xl border-solid px-[15px] py-[8px] text-xl;
+    @apply rounded-xl border-solid px-[15px] py-[8px] text-xl text-textColor;
   }
 
   button.hero {
@@ -20,7 +20,7 @@ html {
   }
 
   button.secondary {
-    @apply bg-textColor border-[4px] border-secondary text-[18px] font-medium text-primary;
+    @apply border-[4px] border-secondary bg-textColor text-[18px] font-medium text-primary hover:bg-secondary hover:text-textColor;
   }
 
   button.resume {
