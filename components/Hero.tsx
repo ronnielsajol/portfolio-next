@@ -5,21 +5,28 @@ const Hero = () => {
   return (
     <>
       <main
-        className="mb-20 flex justify-between px-8 pt-[66px] md:mx-10 lg:ml-20 lg:mr-10 lg:px-0"
+        className="mb-20 flex flex-col justify-between px-8 pt-[66px] md:mx-10 md:flex-row lg:ml-20 lg:mr-10 lg:px-0"
         id="About"
       >
+        {/* mobile view */}
+        <div className="group flex h-96 w-96 self-center md:hidden">
+          <div className="relative">
+            <div className="duration-[5000ms] absolute h-96 w-96 animate-pulse rounded-full bg-accent blur-[18.40px] transition-all"></div>
+            <div className="absolute h-96 w-96">
+              <Image
+                src="/hero.jpg"
+                height={405}
+                width={405}
+                alt="hero"
+                className="h-96 w-96 rounded-full object-cover object-center"
+                loading="lazy"
+                quality={100}
+              ></Image>
+            </div>
+          </div>
+        </div>
         <div className="xl:mr-5">
-          {/* Left section */}
-          {/* <div className="mb-4 flex w-full items-center justify-center">
-            <Image
-              src="/hero2.jpg"
-              alt="portrait"
-              height={300}
-              width={300}
-              className="rounded-full border-4 border-accent md:hidden"
-            />
-          </div> */}
-          <h4 className="text-[4vw] text-slate-200 md:mb-5 md:text-2xl lg:text-2xl xl:text-[2vw]">
+          <h4 className="text-xl text-slate-200 md:mb-5 md:text-2xl lg:text-2xl xl:text-4xl">
             Hi! My name is
           </h4>
           <h1 className="gradient-hero w-fit text-[20vw] font-bold leading-tight text-slate-200 md:text-7xl md:leading-relaxed xl:text-[5vw]">
