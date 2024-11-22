@@ -67,7 +67,7 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="absolute left-0 top-16 flex h-[calc(100vh-64px)] w-full items-center justify-center bg-background md:hidden">
+        <div className="absolute left-0 top-16 flex h-[calc(100vh-4rem)] w-full items-center justify-center bg-background md:hidden">
           <ul className="flex flex-col items-center space-y-6 py-6">
             <li>
               <Button

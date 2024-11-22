@@ -9,23 +9,23 @@ const Hero = () => {
         id="About"
       >
         {/* mobile view */}
-        <div className="group flex h-96 w-96 self-center md:hidden">
+        <div className="group mb-10 flex h-60 w-60 self-center md:hidden">
           <div className="relative">
-            <div className="duration-[5000ms] absolute h-96 w-96 animate-pulse rounded-full bg-accent blur-[18.40px] transition-all"></div>
-            <div className="absolute h-96 w-96">
+            <div className="duration-[5000ms] absolute h-60 w-60 animate-pulse rounded-full bg-accent blur-[18.40px] transition-all"></div>
+            <div className="absolute h-60 w-60">
               <Image
                 src="/hero.jpg"
                 height={405}
                 width={405}
                 alt="hero"
-                className="h-96 w-96 rounded-full object-cover object-center"
+                className="h-60 w-60 rounded-full object-cover object-center"
                 loading="lazy"
                 quality={100}
               ></Image>
             </div>
           </div>
         </div>
-        <div className="xl:mr-5">
+        <div className="text-center md:text-start xl:mr-5">
           <h4 className="text-xl text-slate-200 md:mb-5 md:text-2xl lg:text-2xl xl:text-4xl">
             Hi! My name is
           </h4>
